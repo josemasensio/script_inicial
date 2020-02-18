@@ -72,6 +72,19 @@ EXPECTED_SIGNATURE="$(wget -q -O - https://composer.github.io/installer.sig)"
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ACTUAL_SIGNATURE="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
 
+##################### VSCode extensions #####################
+code --install-extension ms-vscode.cpptools
+code --install-extension formulahendry.code-runner
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension eamodio.gitlens
+code --install-extension zignd.html-css-class-completion
+code --install-extension onecentlin.laravel-blade
+code --install-extension felixfbecker.php-debug
+code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension felixfbecker.php-intellisense
+code --install-extension kokororin.vscode-phpfmt
+code --install-extension esbenp.prettier-vscode
+
 
 
 if [ "$EXPECTED_SIGNATURE" != "$ACTUAL_SIGNATURE" ]
