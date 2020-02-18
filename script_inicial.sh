@@ -62,6 +62,10 @@ sudo apt -y install numix-icon-theme-circle
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 sudo apt update
 sudo apt -y install grub-customizer
+sudo add-apt-repository --remove ppa:danielrichter2007/grub-customizer
+
+##################### Tor Browser ###########################
+sudo apt -y install torbrowser-launcher
 
 ##################### Composer ###########################
 EXPECTED_SIGNATURE="$(wget -q -O - https://composer.github.io/installer.sig)"
