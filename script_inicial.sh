@@ -85,7 +85,17 @@ code --install-extension felixfbecker.php-intellisense
 code --install-extension kokororin.vscode-phpfmt
 code --install-extension esbenp.prettier-vscode
 
-
+code --enable-proposed-api ms-vscode.cpptools
+code --enable-proposed-api formulahendry.code-runner
+code --enable-proposed-api msjsdiag.debugger-for-chrome
+code --enable-proposed-api eamodio.gitlens
+code --enable-proposed-api zignd.html-css-class-completion
+code --enable-proposed-api onecentlin.laravel-blade
+code --enable-proposed-api felixfbecker.php-debug
+code --enable-proposed-api bmewburn.vscode-intelephense-client
+code --enable-proposed-api felixfbecker.php-intellisense
+code --enable-proposed-api kokororin.vscode-phpfmt
+code --enable-proposed-api esbenp.prettier-vscode
 
 if [ "$EXPECTED_SIGNATURE" != "$ACTUAL_SIGNATURE" ]
 then
