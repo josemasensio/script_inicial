@@ -84,6 +84,15 @@ code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension felixfbecker.php-intellisense
 code --install-extension kokororin.vscode-phpfmt
 code --install-extension esbenp.prettier-vscode
+code --install-extension christian-kohler.path-intellisense
+code --install-extension ms-python.python
+code --install-extension cymonk.sql-formatter
+code --install-extension dotjoshjohnson.xml
+code --install-extension tomoki1207.pdf
+code --install-extension redhat.vscode-yaml
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension firefox-devtools.vscode-firefox-debug
+code --install-extension ms-vscode.vs-keybindings
 
 code --enable-proposed-api ms-vscode.cpptools
 code --enable-proposed-api formulahendry.code-runner
@@ -96,6 +105,16 @@ code --enable-proposed-api bmewburn.vscode-intelephense-client
 code --enable-proposed-api felixfbecker.php-intellisense
 code --enable-proposed-api kokororin.vscode-phpfmt
 code --enable-proposed-api esbenp.prettier-vscode
+code --enable-proposed-api christian-kohler.path-intellisense
+code --enable-proposed-api ms-python.python
+code --enable-proposed-api cymonk.sql-formatter
+code --enable-proposed-api dotjoshjohnson.xml
+code --enable-proposed-api tomoki1207.pdf
+code --enable-proposed-api redhat.vscode-yaml
+code --enable-proposed-api shd101wyy.markdown-preview-enhanced
+code --enable-proposed-api firefox-devtools.vscode-firefox-debug
+code --enable-proposed-api ms-vscode.vs-keybindings
+
 
 if [ "$EXPECTED_SIGNATURE" != "$ACTUAL_SIGNATURE" ]
 then
