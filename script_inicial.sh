@@ -62,12 +62,58 @@ sudo apt -y install numix-icon-theme-circle
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 sudo apt update
 sudo apt -y install grub-customizer
+sudo add-apt-repository --remove ppa:danielrichter2007/grub-customizer
+
+##################### Tor Browser ###########################
+sudo apt -y install torbrowser-launcher
 
 ##################### Composer ###########################
 EXPECTED_SIGNATURE="$(wget -q -O - https://composer.github.io/installer.sig)"
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ACTUAL_SIGNATURE="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
 
+##################### VSCode extensions #####################
+code --install-extension ms-vscode.cpptools
+code --install-extension formulahendry.code-runner
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension eamodio.gitlens
+code --install-extension zignd.html-css-class-completion
+code --install-extension onecentlin.laravel-blade
+code --install-extension felixfbecker.php-debug
+code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension felixfbecker.php-intellisense
+code --install-extension kokororin.vscode-phpfmt
+code --install-extension esbenp.prettier-vscode
+code --install-extension christian-kohler.path-intellisense
+code --install-extension ms-python.python
+code --install-extension cymonk.sql-formatter
+code --install-extension dotjoshjohnson.xml
+code --install-extension tomoki1207.pdf
+code --install-extension redhat.vscode-yaml
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension firefox-devtools.vscode-firefox-debug
+code --install-extension ms-vscode.vs-keybindings
+
+code --enable-proposed-api ms-vscode.cpptools
+code --enable-proposed-api formulahendry.code-runner
+code --enable-proposed-api msjsdiag.debugger-for-chrome
+code --enable-proposed-api eamodio.gitlens
+code --enable-proposed-api zignd.html-css-class-completion
+code --enable-proposed-api onecentlin.laravel-blade
+code --enable-proposed-api felixfbecker.php-debug
+code --enable-proposed-api bmewburn.vscode-intelephense-client
+code --enable-proposed-api felixfbecker.php-intellisense
+code --enable-proposed-api kokororin.vscode-phpfmt
+code --enable-proposed-api esbenp.prettier-vscode
+code --enable-proposed-api christian-kohler.path-intellisense
+code --enable-proposed-api ms-python.python
+code --enable-proposed-api cymonk.sql-formatter
+code --enable-proposed-api dotjoshjohnson.xml
+code --enable-proposed-api tomoki1207.pdf
+code --enable-proposed-api redhat.vscode-yaml
+code --enable-proposed-api shd101wyy.markdown-preview-enhanced
+code --enable-proposed-api firefox-devtools.vscode-firefox-debug
+code --enable-proposed-api ms-vscode.vs-keybindings
 
 
 if [ "$EXPECTED_SIGNATURE" != "$ACTUAL_SIGNATURE" ]
